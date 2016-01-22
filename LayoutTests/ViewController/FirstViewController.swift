@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
+    // MARK: ViewLifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        navigationItem.title = "NSLayoutcontraint"
+
     }
 
     override func didReceiveMemoryWarning() {
