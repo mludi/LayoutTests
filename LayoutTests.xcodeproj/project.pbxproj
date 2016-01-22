@@ -284,6 +284,7 @@
 				39D53D101C523D93006CE2C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
