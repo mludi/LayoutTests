@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39868BB11C52754800320C49 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39868BB01C52754800320C49 /* FirstView.swift */; };
 		39D53D001C523D93006CE2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D53CFF1C523D93006CE2C3 /* AppDelegate.swift */; };
 		39D53D021C523D93006CE2C3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D53D011C523D93006CE2C3 /* FirstViewController.swift */; };
 		39D53D051C523D93006CE2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D53D031C523D93006CE2C3 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39868BB01C52754800320C49 /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		39D53CFC1C523D93006CE2C3 /* LayoutTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D53CFF1C523D93006CE2C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D53D011C523D93006CE2C3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 			path = Interface;
 			sourceTree = "<group>";
 		};
+		39868BAF1C52750400320C49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39868BB01C52754800320C49 /* FirstView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		39D53CF31C523D93006CE2C3 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 				39868BAD1C525E1100320C49 /* App */,
 				39868BAE1C525E1E00320C49 /* Interface */,
 				39868BAC1C525E0E00320C49 /* ViewController */,
+				39868BAF1C52750400320C49 /* Views */,
 				39D53D0B1C523D93006CE2C3 /* Info.plist */,
 			);
 			path = LayoutTests;
@@ -156,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D53D021C523D93006CE2C3 /* FirstViewController.swift in Sources */,
+				39868BB11C52754800320C49 /* FirstView.swift in Sources */,
 				39D53D001C523D93006CE2C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
