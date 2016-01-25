@@ -18,14 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let firstViewController = FirstViewController()
         let firstViewNavigationController = UINavigationController(rootViewController: firstViewController)
-        firstViewNavigationController.tabBarItem.title = "First"
+        firstViewNavigationController.tabBarItem.title = NSLocalizedString("First", comment: "")
         
         let secondViewController = SecondViewController()
         let secondViewNavigationController = UINavigationController(rootViewController: secondViewController)
-        secondViewNavigationController.tabBarItem.title = "Second"
-
+        secondViewNavigationController.tabBarItem.title = NSLocalizedString("Second", comment: "")
+        
+        let thirdViewController = ThirdViewController()
+        let thirdViewNavigationController = UINavigationController(rootViewController: thirdViewController)
+        thirdViewNavigationController.tabBarItem.title = NSLocalizedString("Third", comment: "")
+        
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [firstViewNavigationController, secondViewNavigationController]
+        tabBarController.viewControllers = [firstViewNavigationController, secondViewNavigationController, thirdViewNavigationController]
         
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()

@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ThirdViewController.swift
 //  LayoutTests
 //
 //  Created by Matthias Ludwig on 25.01.16.
@@ -8,36 +8,39 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ThirdViewController: UIViewController {
 
     
     // MARK: ViewLifeCycle
     
     override func loadView() {
-        let contentView = SecondView(frame: .zero)
+        let contentView = ThirdView(frame: .zero)
         view = contentView
     }
     
-    var secondView: SecondView {
-        return view as! SecondView
+    var thirdView: ThirdView {
+        return view as! ThirdView
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = NSLocalizedString("NSLayoutAnchor", comment: "")
-    }
+        navigationItem.title = NSLocalizedString("Visual Format Language", comment: "")
 
+    }
+    
     // MARK: Layout
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        NSLayoutConstraint(item: secondView.firstNameLabel, attribute: .Top, relatedBy: .Equal
+        NSLayoutConstraint(item: thirdView.firstNameLabel, attribute: .Top, relatedBy: .Equal
             , toItem: topLayoutGuide, attribute: .Bottom, multiplier: 1.0, constant: 20.0).active = true
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+
 }

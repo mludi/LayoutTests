@@ -24,7 +24,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "NSLayoutcontraint"
+        navigationItem.title = NSLocalizedString("NSLayoutcontraint", comment: "")
 
     }
     
