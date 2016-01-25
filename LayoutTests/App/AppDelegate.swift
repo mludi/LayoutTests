@@ -19,9 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let firstViewController = FirstViewController()
         let firstViewNavigationController = UINavigationController(rootViewController: firstViewController)
         firstViewNavigationController.tabBarItem.title = "First"
+        
+        let secondViewController = SecondViewController()
+        let secondViewNavigationController = UINavigationController(rootViewController: secondViewController)
+        secondViewNavigationController.tabBarItem.title = "Second"
 
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [firstViewNavigationController]
+        tabBarController.viewControllers = [firstViewNavigationController, secondViewNavigationController]
         
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
